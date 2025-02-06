@@ -1,49 +1,62 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
+body {
+  background-color: #f1f5f8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-color: #f1f5f8;
-  font-family: "Roboto", serif;
 }
- .container {
-text-align: center;
- }
-.container h2 {
-  background-color: #222;
-  padding: 20px;
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.note {
+  background-color: lightyellow;
+  padding: 16px;
+  margin: 8px;
   border-radius: 10px;
-  color: #ffffff;
-  font-size: 32px;
-  margin-bottom: 24px;
+  height: 300px;
+  width: 240px;
+  box-shadow: 2px 2px 5px 2px #cacaca;
 }
 
-.color {
-  color: #49a6e9;
-}
-
-.btn {
-  border-color: transparent;
+.note-add {
   padding: 8px;
-  border: 2px solid #222;
-  border-radius: 5px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  color: #222;
-  outline: none;
+  margin: 8px;
   cursor: pointer;
-
 }
 
+.note-edit {
+  padding: 4px;
+  cursor: pointer;
+}
 
-.btn:hover{
-  background-color: #222;
-  color: #fff;
-  transition: all 0.275s ease-in;
+.note-delete {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
